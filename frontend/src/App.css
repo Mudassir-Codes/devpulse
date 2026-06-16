@@ -1,0 +1,57 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #0f0f1a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.app { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #1e1e3a;
+}
+.header h1 { font-size: 1.8rem; font-weight: 700; color: #6366f1; letter-spacing: -0.5px; }
+.header p { color: #94a3b8; font-size: 0.9rem; margin-top: 2px; }
+.profile { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; border: 2px solid #6366f1; }
+.username { font-weight: 600; font-size: 0.9rem; }
+.meta { color: #64748b; font-size: 0.8rem; margin-top: 2px; }
+
+.insight-card {
+  background: linear-gradient(135deg, #1e1e3a, #16213e);
+  border: 1px solid #6366f1;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+.insight-emoji { font-size: 1.6rem; }
+.insight-card p { color: #c7d2fe; font-size: 1rem; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: #13131f;
+  border: 1px solid #1e1e3a;
+  border-radius: 12px;
+  padding: 1.4rem;
+}
+.card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+.card-sub { color: #64748b; font-size: 0.8rem; margin-bottom: 1rem; }
+
+.table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.875rem; }
+.table th { text-align: left; color: #64748b; font-weight: 500; padding: 8px 0; border-bottom: 1px solid #1e1e3a; }
+.table td { padding: 10px 0; border-bottom: 1px solid #0f0f1a; }
+.badge { background: #1e1e3a; color: #6366f1; padding: 2px 10px; border-radius: 999px; font-size: 0.8rem; }
+
+.loading { display: flex; height: 100vh; align-items: center; justify-content: center; color: #64748b; font-size: 1.1rem; }
